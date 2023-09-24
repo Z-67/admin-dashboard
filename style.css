@@ -41,12 +41,15 @@ li {
 
 /* sidebar end */
 
+
+/* header start */
 .header {
     grid-column: 2/3;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    
-
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;    grid-row: 1/2;
+    background-color: white;
+    z-index: 1;
 }
 
 .buttons {
@@ -120,11 +123,16 @@ input[type="search"] {
 }
 
 
-.content-containers {
-    background-color: grey;
-}
-
 .profile-name {
     font-weight: bold;
     margin-left: 7vw;
+}
+
+/* header end */
+
+
+.main-content {
+    background-color: rgb(212, 211, 211);
+    grid-column: 2/3;
+    grid-row: 2/5;
 }
