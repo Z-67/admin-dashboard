@@ -45,7 +45,27 @@ li {
     grid-column: 2/3;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    
 
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 7vw 7vw 7vw;
+    gap: 1vw;
+    position: absolute;
+    right: 10vw;
+    top: 15vh;
+
+}
+
+.new,
+.upload,
+.share {
+    background-color: rgb(118, 118, 216);
+    border-radius: 3vw;
+    color: aliceblue;
+    cursor: pointer;
 }
 
 input[type="search"] {
@@ -96,6 +116,7 @@ input[type="search"] {
 
 .notification-icon {
     margin-left: 8vw;
+    cursor: pointer;
 }
 
 
