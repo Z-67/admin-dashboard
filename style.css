@@ -8,7 +8,7 @@ body {
 .container{
     display:grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 0.8fr 1fr 1fr 1fr;
+    grid-template-rows: 0.6fr 1fr 1fr 1fr;
     
     position: relative;
 }
@@ -57,10 +57,9 @@ li {
     display: grid;
     grid-template-columns: 7vw 7vw 7vw;
     gap: 1vw;
-    position: absolute;
-    right: 10vw;
-    top: 15vh;
-
+    position: relative;
+    margin-left: 30vw;
+    top: -5vh;
 }
 
 .new,
@@ -77,22 +76,24 @@ input[type="search"] {
     width: 50%;
     background-color: lightgrey;
     border-radius: 1vw;
+    position: relative;
+    top: -2vh;
     
 }
 
-.search-container {
-    margin-top: 2vh;
-}
 
 .search-icon {
-    
+    position: relative;
+    top: -2vh;
     margin-left: 5vw;
 }
 
 .hello-username {
     margin-left: 13vw;
-    margin-bottom: 3vh;
+    margin-bottom: -10vh;
     font-size: 1.5vw;
+    position: relative;
+    bottom: 8vh;
 }
 
 .large-profile-pic img {
@@ -100,36 +101,41 @@ input[type="search"] {
     height: 10vh;
     border-radius: 2vw;
     margin-left: 6vw;
-    position: absolute;
-    top: 10vh;
+    position: relative;
 }
 
 .small-profile-pic img{
     width: 4vw;
     height: 7vh;
     border-radius: 2vw;
-    position: absolute;
-    right: 16vw;
+    position: relative;
+    left: 1vw;
     top: 0.8vh;
 
 }
 
 .hi {
     font-size: 0.8vw;
+    position: relative;
 }
 
 .notification-icon {
-    margin-left: 8vw;
+    margin-left: 10vw;
     cursor: pointer;
+    position: relative;
+    top: -2vh;
 }
 
 
 .profile-name {
     font-weight: bold;
-    margin-left: 7vw;
+    margin-left: 4vw;
+    position: relative;
+    top: -2vh;
 }
 
 /* header end */
+
 
 /* main content start */
 .main-content {
@@ -137,9 +143,10 @@ input[type="search"] {
     grid-column: 2/3;
     grid-row: 2/5;
     display: grid;
-    grid-template-columns: 3fr 1fr ;
+    grid-template-columns: 1fr 1fr 0.8fr ;
     grid-template-rows: auto auto auto;
     grid-gap: 3vw;
+    
 }
 
 
@@ -148,7 +155,11 @@ input[type="search"] {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat (3,1fr);
     grid-gap: 2vw;
-    padding: 3vw;
+    padding: vw;
+    position: relative;
+    margin-top: 5vh;
+    right:13vw;
+    
 }
 
 .card {
@@ -157,12 +168,46 @@ input[type="search"] {
     width: 25vw;
     text-align: center;
     font-size: 0.8vw;
-    
-}
+    border-left:0.4vw solid #e36c0a; 
+  }
+  
 
 .your-project {
     font-weight: bolder;
+    font-size: 1vw;
+    position: relative;
+    left: 1vw;
+    top: 2vh;
+}
+
+.announcements-and-trending {
     
-   margin-bottom: vh;
-   height: 2vh;
+}
+
+.announcement-header{
+    position: relative;
+    right: 14vw;
+    font-weight: bold;
+}
+
+
+.announcements{
+    background-color: white;
+    box-shadow: 10px 10px 15px 10px #888888;
+    border-radius: 0.4vw;
+    font-size: 0.8vw;
+    position: relative;
+    right: 14vw;
+    width: 200%;
+    
+}
+
+.announcements h1 {
+    font-size: 1vw;
+    
+}
+
+.announcements p:not(:last-child) {
+    border-bottom: 1px solid #ccc; /* Thin grey border */
+    padding-bottom: 0.8vw; /* Optional: Add some spacing between the paragraph and the border */
 }
