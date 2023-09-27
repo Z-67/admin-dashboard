@@ -155,7 +155,6 @@ input[type="search"] {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat (3,1fr);
     grid-gap: 2vw;
-    padding: vw;
     position: relative;
     margin-top: 5vh;
     right:13vw;
@@ -211,3 +210,42 @@ input[type="search"] {
     border-bottom: 1px solid #ccc; /* Thin grey border */
     padding-bottom: 0.8vw; /* Optional: Add some spacing between the paragraph and the border */
 }
+
+.trending-header {
+    position: relative;
+    right: 14vw;
+    font-weight: bold;
+    top:3vh;
+}
+
+.trending {
+    background-color: white;
+    box-shadow: 10px 10px 15px 10px #888888;
+    border-radius: 0.4vw;
+    font-size: 0.8vw;
+    position: relative;
+    right: 14vw;
+    width: 200%;
+    top: 4vh;
+    
+}
+
+.trending-pic{
+    width: 4vw;
+    height: 6vh;
+}
+
+.trending-profile {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin-bottom: 0.8vw; 
+    text-align: center; 
+    
+}
+
+.trending-username {
+    font-weight: bold; 
+
+}
+
