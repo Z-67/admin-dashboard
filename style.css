@@ -9,17 +9,26 @@ body {
     display:grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 0.6fr 1fr 1fr 1fr;
-    
     position: relative;
 }
 
 /* sidebar start */
 
 .dashboard {
-    display: grid;
+    display: flex;
     justify-content: center;
-    font-size: 3vw;
-    margin-bottom: 0vh;
+    font-size: 2vw;
+    margin-top: 2vh;
+    font-weight: bold;
+}
+
+.dashboard svg{
+    width: 3vw;
+    position: absolute;
+    left: 1vw;
+    fill: white;
+    
+
 }
 
 .sidebar {
@@ -32,12 +41,17 @@ body {
 
 ul {
     list-style-type: none;
-    padding-top: 0; /* Remove any top padding on the <ul> element */
-    margin-top: 0; /* Remove any top margin on the <ul> element */
+    padding-top: 0; 
+    margin-top: 0; 
 }
 
 li {
-    margin-top: 5vh;
+    margin-top: 4vh;
+    margin-left: 0.7vw;
+    position: relative;
+    top:-23vh;
+    text-align: left;
+    font-weight: bold;
 }
 
 /* sidebar end */
@@ -60,6 +74,7 @@ li {
     position: relative;
     margin-left: 30vw;
     top: -5vh;
+    height:5vh ;
 }
 
 .new,
@@ -69,6 +84,7 @@ li {
     border-radius: 3vw;
     color: aliceblue;
     cursor: pointer;
+    border: rgb(118, 118, 216);
 }
 
 input[type="search"] {
@@ -129,7 +145,7 @@ input[type="search"] {
 
 .profile-name {
     font-weight: bold;
-    margin-left: 4vw;
+    margin-left: 2vw;
     position: relative;
     top: -2vh;
 }
@@ -157,7 +173,7 @@ input[type="search"] {
     grid-template-rows: repeat (3,1fr);
     grid-gap: 2vw;
     position: relative;
-    margin-top: 5vh;
+    margin-top: 6vh;
     right:16vw;
     grid-row-gap: 1.5vw;
     
@@ -177,19 +193,18 @@ input[type="search"] {
 
 .your-project {
     font-weight: bolder;
-    font-size: 1vw;
+    font-size: 1.2vw;
     position: relative;
     left: 1.4vw;
-    top: 2vh;
+    top: 1.3vh;
 }
 
-.announcements-and-trending {
-    
-}
 
 .announcement-header{
     position: relative;
     right: 14vw;
+    top: 1.3vh;
+    font-size: 1.2vw;
     font-weight: bold;
 }
 
@@ -200,19 +215,31 @@ input[type="search"] {
     border-radius: 0.4vw;
     font-size: 0.8vw;
     position: relative;
+    top: 1vh;
     right: 14vw;
     width: 160%;
+    height: 57%;
     
 }
 
 .announcements h1 {
     font-size: 1vw;
+    margin-left: 2vw;
     
 }
 
+.announcements p {
+
+    margin-left: 2vw;
+    margin-right: 2vw;
+    
+}
+
+
+
 .announcements p:not(:last-child) {
-    border-bottom: 1px solid #ccc; /* Thin grey border */
-    padding-bottom: 0.8vw; /* Optional: Add some spacing between the paragraph and the border */
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 0.8vw; 
 }
 
 .trending-header {
