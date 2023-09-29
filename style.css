@@ -170,6 +170,7 @@ input[type="search"] {
     text-align: center;
     font-size: 0.8vw;
     border-left:0.4vw solid #e36c0a; 
+    position: relative;
     
   }
   
@@ -258,4 +259,24 @@ input[type="search"] {
 
 .trending-project{
     font-weight: lighter; 
+}
+
+.star,
+.shares,
+.eye {
+    padding: 0;
+    background-color:white ;
+    border: white;
+}
+
+.button-container{
+    display: grid;
+    grid-template-columns: 1.6vw 1.6vw 1.6vw;
+    grid-gap: 1.5vw ;
+    position: absolute;
+    bottom: 2vh;
+    left: 12vw;
+    
+    
+    
 }
