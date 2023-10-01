@@ -20,6 +20,7 @@ body {
     font-size: 2vw;
     margin-top: 2vh;
     font-weight: bold;
+    margin-bottom: 5vh;
 }
 
 .dashboard svg{
@@ -27,8 +28,26 @@ body {
     position: absolute;
     left: 1vw;
     fill: white;
-    
+}
 
+.sidebar-icon {
+    text-align: left;
+    padding-left: 0.9vw;
+    font-size: 1.3vw;
+
+}
+
+.sidebar-icon:hover {
+transform: scale(1.1); 
+cursor: pointer;
+}
+
+.sidebar-icon svg {
+    width: 2vw;
+    height: auto;
+    position: absolute;
+    left: -2.5vw;
+    fill: white;
 }
 
 .sidebar {
@@ -140,8 +159,12 @@ input[type="search"] {
     cursor: pointer;
     position: relative;
     top: -2vh;
+    
 }
 
+.notification-icon:hover{
+font-size: 1.5vw; 
+}
 
 .profile-name {
     font-weight: bold;
@@ -294,6 +317,14 @@ input[type="search"] {
     padding: 0;
     background-color:white ;
     border: white;
+    cursor: pointer;
+}
+
+.star:hover,
+.shares:hover,
+.eye:hover {
+    transform: scale(1.2); 
+
 }
 
 .button-container{
