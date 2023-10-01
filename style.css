@@ -20,7 +20,6 @@ body {
     font-size: 2vw;
     margin-top: 2vh;
     font-weight: bold;
-    margin-bottom: 5vh;
 }
 
 .dashboard svg{
@@ -40,6 +39,7 @@ body {
 .sidebar-icon:hover {
 transform: scale(1.1); 
 cursor: pointer;
+text-decoration: underline;
 }
 
 .sidebar-icon svg {
@@ -65,7 +65,7 @@ ul {
 }
 
 li {
-    margin-top: 4vh;
+    margin-top: 5vh;
     margin-left: 0.7vw;
     position: relative;
     top:-23vh;
@@ -106,6 +106,13 @@ li {
     border: rgb(118, 118, 216);
 }
 
+.new:hover,
+.upload:hover,
+.share:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 input[type="search"] {
     margin-left: 1vw;
     width: 50%;
@@ -121,6 +128,12 @@ input[type="search"] {
     position: relative;
     top: -2vh;
     margin-left: 5vw;
+}
+
+.search-icon:hover {
+
+cursor: pointer;
+font-size: 1.5vw;
 }
 
 .hello-username {
@@ -147,6 +160,16 @@ input[type="search"] {
     left: 1vw;
     top: 0.8vh;
 
+}
+
+.small-profile-pic img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.large-profile-pic img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .hi {
@@ -196,7 +219,7 @@ font-size: 1.5vw;
     grid-template-rows: repeat (3,1fr);
     grid-gap: 2vw;
     position: relative;
-    margin-top: 6vh;
+    margin-top: 7vh;
     right:16vw;
     grid-row-gap: 1.5vw;
     
@@ -210,13 +233,21 @@ font-size: 1.5vw;
     font-size: 0.8vw;
     border-left:0.4vw solid #e36c0a; 
     position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5vw;
     
   }
   
 
+h1:hover{
+    font-size: 1.7vw;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .your-project {
     font-weight: bolder;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     position: relative;
     left: 1.4vw;
     top: 1.3vh;
@@ -227,7 +258,7 @@ font-size: 1.5vw;
     position: relative;
     right: 14vw;
     top: 1.3vh;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     font-weight: bold;
 }
 
@@ -238,7 +269,7 @@ font-size: 1.5vw;
     border-radius: 0.4vw;
     font-size: 0.8vw;
     position: relative;
-    top: 1vh;
+    top: 1.5vh;
     right: 14vw;
     width: 160%;
     height: 57%;
@@ -280,6 +311,7 @@ font-size: 1.5vw;
     position: relative;
     right: 14vw;
     width: 160%;
+    height: 40%;
     top: 4vh;
     
 }
@@ -288,6 +320,7 @@ font-size: 1.5vw;
     width: 3vw;
     height: 6vh;
     margin-bottom: 1vh;
+    margin-top: 1.5vh;
     margin-left: 1vw;
 }
 
@@ -299,12 +332,14 @@ font-size: 1.5vw;
     
 }
 
+.trending-profile:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .trending-username {
     text-align: left;
     margin-left: 0.5vw;
-
-
-
 }
 
 .trending-project{
@@ -334,7 +369,5 @@ font-size: 1.5vw;
     position: absolute;
     bottom: 2vh;
     left: 12vw;
-    
-    
     
 }
